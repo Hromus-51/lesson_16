@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- файлы стилей -->
+    <link rel="stylesheet" href="css/null.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <meta name="viewport" content="width=1230"> -->
+    <title>Lesson 16</title>
+</head>
+
+<body class="body">
+    <!-- WRAPPER -->
+    <div class="wrapper">
+        <!-- HEADER -->
+        <header class="header"></header>
+        <!-- MAIN -->
+        <main class="main">
+            <!-- MAKE AN APPOINTMENT -->
+            <div class="appointment">
+                <div class="appointment__container">
+                    <div class="appointment__form-box box-form">
+                        <div class="box-form__title">Make an appointment</div>
+                        <form class="box-form__form" action="#">
+                            <div class="box-form__areas">
+                                <input class="box-form__item" placeholder="Name" type="text" name="username" autocomplete="off">
+                                <input class="box-form__item" placeholder="Email" type="email" name="email" autocomplete="off">
+                                <input class="box-form__item" placeholder="Phone Number" type="tel" name="tel" autocomplete="off">
+                                <input class="box-form__item" placeholder="Select Service" type="text" name="service" autocomplete="off">
+                                <textarea class="box-form__item box-form__item_area" placeholder="Tell us about your puppers include his/her name" name="comments"></textarea>
+                            </div>
+                            <button class="box-form__button" type="submit">Make an Appointment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SUMMARY -->
+            <div class="summary">
+                <div class="summary__container">
+                    <div class="summary__box-form">
+                        <div class="summary__title title">Summary</div>
+                        <div class="summary__subtitle subtitle">Estimate Shipping and Tax</div>
+                        <div class="summary__hint">Enter your destination to get a shipping estimate.</div>
+                        <!-- форма -->
+                        <form class="summary__form form-summary" action="#">
+                            <!-- АДРЕС -->
+                            <div class="form-summary__address">
+                                <!-- выпадающий список -->
+                                <label class="form-summary__label label" for="country">Country</label>
+                                <select class="form-summary__input area area_select" name="country" id="country">
+                                    <option value="1" selected>Australia</option>
+                                    <option value="2">Romania</option>
+                                    <option value="3">England</option>
+                                    <option value="4">Netherlands</option>
+                                </select>
+                                <!-- штат -->
+                                <label class="form-summary__label label" for="state">State/Province</label>
+                                <input class="form-summary__input area" type="text" name="state" autocomplete="off" id="state">
+                                <!-- индекс -->
+                                <label class="form-summary__label label" for="state">Zip/Postal Code</label>
+                                <input class="form-summary__input area" type="text" name="postal" autocomplete="off" id="postal">
+                            </div>
+                            <!-- ДОСТАВКА -->
+                            <div class="form-summary__box-rate">
+                                <!-- 1 -->
+                                <div class="form-summary__label label">Standard Rate</div>
+                                <div class="form-summary__radio-rate">
+                                    <input class="form-summary__rate-input input-rate" checked="checked" type="radio" name="rate" id="rate_1">
+                                    <label class="form-summary__rate-label label-rate" for="rate_1">Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</label>
+                                </div>
+                                <!-- 2 -->
+                                <div class="form-summary__label label">Pickup from store</div>
+                                <div class="form-summary__radio-rate">
+                                    <input class="form-summary__rate-input input-rate" type="radio" name="rate" id="rate_2">
+                                    <label class="form-summary__rate-label label-rate" for="rate_2">1234 Street Adress City Address, 1234 $0.00</label>
+                                </div>
+                            </div>
+                            <!-- ДИСКАУНТ -->
+                            <div class="form-summary__discount">
+                                <div class="summary__subtitle">Apply Discount Code</div>
+                                <label class="form-summary__label label" for="code">Enter discount code</label>
+                                <input class="form-summary__code area" placeholder="Enter Discount code" type="text" name="code" autocomplete="off" id="code">
+                            </div>
+                            <!-- КНОПКА -->
+                            <button class="summary__button button-line button-line_width">Apply Discount</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- REGISTERED -->
+            <div class="registered">
+                <div class="registered__container">
+                    <div class="registered__box-form">
+                        <div class="registered__title title">Registered Customers</div>
+                        <div class="registered__action">If you have an account, sign in with your email address.</div>
+                        <!-- форма -->
+                        <form class="registered__form form-registered" action="#">
+                            <div class="form-registered__email-box">
+                                <!-- email -->
+                                <label class="form-registered__label label" for="email">Email <span class="form-registered__span span">*</span></label>
+                                <input class="form-registered__input area" type="email" name="email" autocomplete="off" id="email" placeholder="Your Name">
+                                <!-- пароль -->
+                                <label class="form-registered__label label" for="password">Password <span class="form-registered__span span">*</span></label>
+                                <input class="form-registered__input area" type="password" name="password" autocomplete="off" id="password" placeholder="Your password">
+                            </div>
+                            <!-- кнопки -->
+                            <div class="form-registered__buttons">
+                                <button class="form-registered__button button-full">Sign In</button>
+                                <button class="form-registered__button button-full">Forgot Your Password?</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CHECKOUT -->
+            <div class="checkout">
+                <div class="checkout__container">
+                    <div class="checkout__top">
+                        <div class="checkout__title title">Checkout </div>
+                        <button class="checkout__button button-line">Sign In</button>
+                    </div>
+                    <div class="checkout__subtitle subtitle subtitle_weight">Shipping Address</div>
+                    <form class="checkout__form" action="#">
+                        <div class="checkout__box-form">
+                            <!-- email -->
+                            <div class="checkout__email">
+                                <label class="checkout__label label" for="email-checkout">Email Address<span class="checkout__span span"> *</span></label>
+                                <input class="checkout__input area area_width" type="email" name="email" autocomplete="off" id="email-checkout">
+                                <div class="checkout__hint">You can create an account after checkout.</div>
+                            </div>
+                            <!-- first name -->
+                            <label class="checkout__label label" for="first-name">First Name<span class="checkout__span span"> *</span></label>
+                            <input class="checkout__input area area_width" type="text" name="first-name" autocomplete="off" id="first-name">
+                            <!-- last name -->
+                            <label class="checkout__label label" for="last-name">Last Name<span class="checkout__span span"> *</span></label>
+                            <input class="checkout__input area area_width" type="text" name="last-name" autocomplete="off" id="last-name">
+                            <!-- company -->
+                            <label class="checkout__label label" for="company">Company<span class="checkout__span span"> *</span></label>
+                            <input class="checkout__input area area_width" type="text" name="company" autocomplete="off" id="company">
+                            <!-- street Address -->
+                            <label class="checkout__label label" for="street">Street Address<span class="checkout__span span"> *</span></label>
+                            <input class="checkout__input area area_width" type="text" name="street" autocomplete="off" id="street">
+                            <input class="checkout__input area area_width" type="text" name="street" autocomplete="off">
+                            <!-- city -->
+                            <label class="checkout__label label" for="city">City<span class="checkout__span span"> *</span></label>
+                            <input class="checkout__input area area_width" type="text" name="city" autocomplete="off" id="city">
+                            <!-- state/province -->
+                            <label class="checkout__label label" for="state-checkout">State/Province<span class="checkout__span span"> *</span></label>
+                            <select class="checkout__input area area_select area_width " name="state" id="state-checkout">
+                                <option value="1" selected>Please, select a region, state or province</option>
+                                <option value="2">none</option>
+                                <option value="3">none</option>
+                                <option value="4">none</option>
+                            </select>
+                            <!-- postal code -->
+                            <label class="checkout__label label" for="zip">Zip/Postal Code<span class="checkout__span span"> *</span></label>
+                            <input class="checkout__input area area_width" type="text" name="zip" autocomplete="off" id="zip">
+                            <!-- country -->
+                            <label class="checkout__label label" for="country-checkout">Country<span class="checkout__span span"> *</span></label>
+                            <select class="checkout__input area area_select area_width " name="country" id="country-checkout">
+                                <option value="1" selected>United States</option>
+                                <option value="2">none</option>
+                                <option value="3">none</option>
+                                <option value="4">none</option>
+                            </select>
+                            <!-- phone number -->
+                            <label class="checkout__label label" for="phone-checkout">Phone Number<span class="checkout__span span"> *</span></label>
+                            <input class="checkout__input area area_width" type="tel" name="phone" autocomplete="off" id="phone-checkout">
+                        </div>
+                        <!-- rate -->
+                        <div class="checkout__box-rate">
+                            <div class="checkout__label label">Standard Rate</div>
+                            <div class="checkout__radio-rate">
+                                <input class="checkout__rate-input input-rate" checked="checked" type="radio" name="rate" id="point_1">
+                                <label class="checkout__rate-label label-rate" for="point_1">Price may vary depending on the item/destination. Shop Staff will contact you.</label>
+                                <div class="checkout__prise">$21.00</div>
+                            </div>
+                            <div class="checkout__label label">Pickup from store</div>
+                            <div class="checkout__radio-rate">
+                                <input class="checkout__rate-input input-rate" type="radio" name="rate" id="point_2">
+                                <label class="checkout__rate-label label-rate" for="point_2">1234 Street Adress City Address, 1234</label>
+                                <div class="checkout__prise">$0.00</div>
+                            </div>
+                        </div>
+                        <!-- button -->
+                        <button class="checkout__button button-full button-full_none-color">Next</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+        </footer>
+    </div>
+</body>
+
+</html>
